@@ -1,59 +1,135 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Arnav Shah</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            display: ["Comfortaa"],
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <div class="p-8">
-      <h1 class="font-bold font-mono text-6xl text-center text-orange-400">Arnav Shah</h1>
-      <br>
+      <h1 class="font-bold font-mono text-6xl text-center text-orange-400">
+        Arnav Shah
+      </h1>
+      <br />
       <div class="flex flex-row">
-        <div class="font-mono">
-            <p>Hailing from Vadodara, India, I am pursuing a Bachelor's in Computer Science at the University of Illinois at Urbana-Champaign with a minor in Business.</p>
-            <br>
-            <p>With a family history of doctors, I am interested in the intersection of healthcare and engineering. Thus, I am an undergraduate researcher at the Healthcare Engineering Systems Center. In addition, my skills in teaching as a course assistant for Discrete Structures and Numerical Methods allow me to help people learn the theory behind programming. I have also developed a stock inventory management application for Nisarg Orthopedic and Maternity Hospital in India.</p>
-            <br>
-            <p>As an active leader, I have served as the Treasurer for Open-Source@Illinois, a club dedicated to discussing, developing, and utilizing FOSS and open-source software to promote a healthy and free internet.</p>
-            <br>
-            <p>Outside coding, I love music and play Tabla and the drums. Participating enthusiastically in this community, I am the Vice-President (previously Treasurer) at the SpicMacay Illinois chapter.</p>  
-            <br>
+        <div class="text-xl font-display w-3/5 p-8">
+          <p>
+            Hailing from Vadodara, India, I am pursuing a Bachelor's in Computer
+            Science at the University of Illinois at Urbana-Champaign with a
+            minor in Business.
+          </p>
+          <br />
+          <p>
+            With a family history of doctors, I am interested in the
+            intersection of healthcare and engineering. Thus, I am an
+            undergraduate researcher at the Healthcare Engineering Systems
+            Center. In addition, my skills in teaching as a course assistant for
+            Discrete Structures and Numerical Methods allow me to help people
+            learn the theory behind programming. I have also developed a stock
+            inventory management application for Nisarg Orthopedic and Maternity
+            Hospital in India.
+          </p>
+          <br />
+          <p>
+            As an active leader, I have served as the Treasurer for
+            Open-Source@Illinois, a club dedicated to discussing, developing,
+            and utilizing FOSS and open-source software to promote a healthy and
+            free internet.
+          </p>
+          <br />
+          <p>
+            Outside coding, I love music and play Tabla and the drums.
+            Participating enthusiastically in this community, I am the
+            Vice-President (previously Treasurer) at the SpicMacay Illinois
+            chapter.
+          </p>
+          <br />
         </div>
-        <div class="rounded-lg drop-shadow-md">
-            <img src="/images/arnav.JPG" />
+        <div class="w-2/5 p-8">
+          <img class="rounded-lg drop-shadow-md" src="./images/arnav.JPG" />
         </div>
       </div>
-      <div class="grid grid-rows-1">
-        <div>
-            <h4 class="text-xl font-bold underline">Projects:</h4>
-            <ul class="list-disc">
-                <li><a href="https://cherry.opensourceatillinois.com/home" class="text-blue-600 visited:text-purple-600 ...">
-                    Cherry (Class-Optimizer)
-                </a></li>
-                <li><a href="https://github.com/arnavss2/tetris" class="text-blue-600 visited:text-purple-600 ...">
-                    Tetris Game
-                </a></li>
-            </ul>
+      <div class="flex flex-row font-mono">
+        <div class="w-1/2 p-8">
+          <h4 class="text-xl font-semibold">Projects:</h4>
+          <br>
+          <ul class="list-disc list-inside">
+            <li>
+              <a
+                href="https://cherry.opensourceatillinois.com/home"
+                class="text-blue-600 visited:text-purple-600 font-display"
+              >
+                Cherry (Class-Optimizer)
+              </a>
+              <br>
+              <img class="rounded-lg drop-shadow-md" src="./images/cherry.png">
+            </li>
+            <br>
+            <li>
+              <a
+                href="https://github.com/arnavss2/tetris"
+                class="text-blue-600 visited:text-purple-600 font-display"
+              >
+                Tetris Game
+              </a>
+              <br>
+              <img class="rounded-lg drop-shadow-md" src="./images/Tetris.png">
+            </li>
+          </ul>
         </div>
-        <div>
-            <h4 class="text-xl font-bold underline">Social Media:</h4>
-            <ul class="list-disc">
-                <li><a href="https://www.linkedin.com/in/arnavss" class="text-blue-600 visited:text-purple-600 ...">
-                    LinkedIn
-                </a></li>
-                <li><a href="https://github.com/arnavss2" class="text-blue-600 visited:text-purple-600 ...">
-                    GitHub
-                </a></li>
-            </ul>
+        <div class="w-1/2 p-8">
+          <h4 class="text-xl font-semibold">Social Media:</h4>
+          <br>
+          <ul class="list-disc list-inside">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/arnavss"
+                class="text-blue-600 visited:text-purple-600 font-display"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <br>
+            <li>
+              <a
+                href="https://github.com/arnavss2"
+                class="text-blue-600 visited:text-purple-600 font-display"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <!-- <p>Click <a href="/hello">here</a> to see content created by server code.</p> -->
-      <div class="justify-center">
+      <div class="text-center font-display">
         <p>Click here to get a random quote from my favorite TV shows:</p>
-        <button onclick="addRandomQuote()">Quote</button>
+        <br />
+        <div>
+          <button
+            class="rounded-md bg-blue-400 hover:bg-blue-600 p-2"
+            onclick="addRandomQuote()"
+          >
+            Quote
+          </button>
+        </div>
         <div id="quote-container"></div>
       </div>
     </div>
