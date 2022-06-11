@@ -69,7 +69,7 @@
       <div class="flex flex-row font-mono">
         <div class="w-1/2 p-8">
           <h4 class="text-xl font-semibold">Projects:</h4>
-          <br>
+          <br />
           <ul class="list-disc list-inside">
             <li>
               <a
@@ -78,10 +78,13 @@
               >
                 Cherry (Class-Optimizer)
               </a>
-              <br>
-              <img class="rounded-lg drop-shadow-md" src="./images/cherry.png">
+              <br />
+              <img
+                class="rounded-lg drop-shadow-md"
+                src="./images/cherry.png"
+              />
             </li>
-            <br>
+            <br />
             <li>
               <a
                 href="https://github.com/arnavss2/tetris"
@@ -89,14 +92,17 @@
               >
                 Tetris Game
               </a>
-              <br>
-              <img class="rounded-lg drop-shadow-md" src="./images/Tetris.png">
+              <br />
+              <img
+                class="rounded-lg drop-shadow-md"
+                src="./images/Tetris.png"
+              />
             </li>
           </ul>
         </div>
         <div class="w-1/2 p-8">
           <h4 class="text-xl font-semibold">Social Media:</h4>
-          <br>
+          <br />
           <ul class="list-disc list-inside">
             <li>
               <a
@@ -106,7 +112,7 @@
                 LinkedIn
               </a>
             </li>
-            <br>
+            <br />
             <li>
               <a
                 href="https://github.com/arnavss2"
@@ -132,6 +138,29 @@
         </div>
         <div id="quote-container"></div>
       </div>
+      <div class="bg-teal-400 flex font-display justify-center">
+        <form action="/form-handler" method="POST">
+            <div>
+                <h1>Enter your details below to contact me!</h1>
+            </div>
+            <br />
+            <div>
+                <input type="text" name="name" placeholder="Name"></input>
+            </div>
+            <br />
+            <div>
+                <input type="text" name="email" placeholder="Email"></input>
+            </div>
+            <br/>
+            <div>
+                <textarea name="message" placeholder="Message"></textarea>
+            </div>
+            <br/>
+            <div>
+                <input class="rounded-md bg-blue-400 hover:bg-blue-600 p-2" type="submit" />
+            </div>
+        </form>
+        </div>
     </div>
   </body>
 </html>
