@@ -138,12 +138,29 @@
         </div>
         <div id="quote-container"></div>
       </div>
-      <form action="/form-handler" method="POST">
-        <p>Enter some text here:</p>
-        <textarea name="text-input">hello world</textarea>
-        <br />
-        <input type="submit" />
-      </form>
+      <div class="bg-teal-400 flex font-display justify-center">
+        <form action="/form-handler" method="POST">
+            <div>
+                <h1>Enter your details below to contact me!</h1>
+            </div>
+            <br />
+            <div>
+                <input type="text" name="name" placeholder="Name"></input>
+            </div>
+            <br />
+            <div>
+                <input type="text" name="email" placeholder="Email"></input>
+            </div>
+            <br/>
+            <div>
+                <textarea name="message" placeholder="Message"></textarea>
+            </div>
+            <br/>
+            <div>
+                <input class="rounded-md bg-blue-400 hover:bg-blue-600 p-2" type="submit" />
+            </div>
+        </form>
+        </div>
     </div>
   </body>
 </html>
