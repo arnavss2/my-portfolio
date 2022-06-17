@@ -26,3 +26,50 @@ function addRandomQuote() {
   const quoteContainer = document.getElementById('quote-container');
   quoteContainer.innerText = quote;
 }
+
+/** Fetches contacts from the server and adds them to the DOM. */
+function loadContacts() {
+    fetch('/list-contacts').then(response => response.json()).then((contacts) => {
+      const contactListElement = document.getElementById('contact-list');
+      contacts.forEach((contact) => {
+        contactListElement.appendChild(createContactElement(contact));
+      })
+    });
+}
+  
+  /** Creates an element that represents a contact, including its delete button. */
+  function createContactElement(contact) {
+    const contactElement = document.createElement('li');
+    contactElement.className = 'contact';
+  
+    const nameElement = document.createElement('span');
+    nameElement.innerText = contact.name;
+  
+    const emailElement = document.createElement('span');
+    emailElement.innerText = contact.email;
+
+    const messageElement = document.createElement('span');
+    messageElement.innerText = contact.message;
+
+    const deleteButtonElement = document.createElement('button');
+    deleteButtonElement.innerText = 'Delete';
+    deleteButtonElement.addEventListener('click', () => {
+        deleteContact(contact);
+
+        // Remove the task from the DOM.
+        contactElement.remove();
+    });
+
+    contactElement.appendChild(nameElement);
+    contactElement.appendChild(emailElement);
+    contactElement.appendChild(messageElement);
+
+    return contactElement;
+}
+
+/** Tells the server to delete the contact. */
+function deleteContact(contact) {
+    const params = new URLSearchParams();
+    params.append('id', contact.id);
+    fetch('/delete-contact', {method: 'POST', body: params});
+}
