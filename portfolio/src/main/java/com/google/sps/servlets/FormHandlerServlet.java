@@ -31,7 +31,7 @@ public class FormHandlerServlet extends HttpServlet {
     response.getWriter().println("Name: " + name);
     response.getWriter().println("Email: " + email);
     response.getWriter().println("Message: " + message);
-
+    
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
 
     KeyFactory keyFactory = datastore.newKeyFactory().setKind("Contact");

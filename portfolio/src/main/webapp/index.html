@@ -66,63 +66,74 @@
           <img class="rounded-lg drop-shadow-md" src="./images/arnav.JPG" />
         </div>
       </div>
-      <div class="flex flex-row font-mono">
-        <div class="w-1/2 p-8">
-          <h4 class="text-xl font-semibold">Projects:</h4>
-          <br />
-          <ul class="list-disc list-inside">
-            <li>
+      <div class="flex flex-col font-mono">
+        <h4 class="text-xl font-semibold text-center">Projects:</h4>
+        <br />
+          <ul class="list-none list-inside">
+            <li class="flex">
+            <div class="w-1/2 p-8">
               <a
                 href="https://cherry.opensourceatillinois.com/home"
                 class="text-blue-600 visited:text-purple-600 font-display"
               >
                 Cherry (Class-Optimizer)
               </a>
-              <br />
-              <img
+              <p>With the vast number of courses on offer at UIUC and the wide variation in average GPA, instructor quality, prereqs, and number of GenEds fulfilled, picking the best course to take is hard.
+
+                Cherry aims to solve this to make course picking super easy. Just open Cherry, and see a list of all the courses at UIUC sorted by highest to lowest GPA. You can search by departments and even filter courses based on Gen-Eds you'd like to fulfill, with tons of more planned features coming soon!
+                
+                </p>
+                <a href="https://cherry.opensourceatillinois.com/home">
+                    <button class="rounded-lg drop-shadow-md bg-blue-400">Live</button>
+                </a>
+            </div>
+            <div class="w-1/2 p-8">
+                <img
                 class="rounded-lg drop-shadow-md"
                 src="./images/cherry.png"
               />
+            </div>
             </li>
-            <br />
-            <li>
-              <a
-                href="https://github.com/arnavss2/tetris"
-                class="text-blue-600 visited:text-purple-600 font-display"
-              >
-                Tetris Game
-              </a>
-              <br />
-              <img
+            <li class="flex">
+                <div class="w-1/2 p-8">
+                    <a
+                      href="https://github.com/arnavss2/tetris"
+                      class="text-blue-600 visited:text-purple-600 font-display"
+                    >
+                      Tetris Game
+                    </a>
+                </div>
+                <div class="w-1/2 p-8">
+                    <img
                 class="rounded-lg drop-shadow-md"
                 src="./images/Tetris.png"
               />
+                </div>
             </li>
           </ul>
-        </div>
-        <div class="w-1/2 p-8">
-          <h4 class="text-xl font-semibold">Social Media:</h4>
+      </div>
+      <div class="w-1/2 p-8">
+        <h4 class="text-xl font-semibold">Social Media:</h4>
+        <br />
+        <ul class="list-disc list-inside">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/arnavss"
+              class="text-blue-600 visited:text-purple-600 font-display"
+            >
+              LinkedIn
+            </a>
+          </li>
           <br />
-          <ul class="list-disc list-inside">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/arnavss"
-                class="text-blue-600 visited:text-purple-600 font-display"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <br />
-            <li>
-              <a
-                href="https://github.com/arnavss2"
-                class="text-blue-600 visited:text-purple-600 font-display"
-              >
-                GitHub
-              </a>
-            </li>
-          </ul>
-        </div>
+          <li>
+            <a
+              href="https://github.com/arnavss2"
+              class="text-blue-600 visited:text-purple-600 font-display"
+            >
+              GitHub
+            </a>
+          </li>
+        </ul>
       </div>
       <!-- <p>Click <a href="/hello">here</a> to see content created by server code.</p> -->
       <div class="text-center font-display">
@@ -160,15 +171,6 @@
                 <input class="rounded-md bg-blue-400 hover:bg-blue-600 p-2" type="submit" />
             </div>
         </form>
-        </div>
-        <div>
-            <button
-              class="rounded-md bg-blue-400 hover:bg-blue-600 p-2"
-              onclick="loadContacts()"
-            >
-              Contacts
-            </button>
-            <ul id="contact-list"></ul>
         </div>
     </div>
   </body>

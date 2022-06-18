@@ -63,6 +63,7 @@ function loadContacts() {
     contactElement.appendChild(nameElement);
     contactElement.appendChild(emailElement);
     contactElement.appendChild(messageElement);
+    contactElement.appendChild(deleteButtonElement);
 
     return contactElement;
 }
