@@ -10,10 +10,10 @@ public class Contact {
         
     }
 
-    public Contact(long set_id, String set_name, String set_email, String set_message){
-        id = set_id;
-        name = set_name;
-        email = set_email;
-        message = set_message;
+    public Contact(long id, String name, String email, String message){
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.message = message;
     }
 }

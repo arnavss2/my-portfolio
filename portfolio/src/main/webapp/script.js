@@ -51,26 +51,9 @@ function loadContacts() {
     const messageElement = document.createElement('span');
     messageElement.innerText = contact.message;
 
-    const deleteButtonElement = document.createElement('button');
-    deleteButtonElement.innerText = 'Delete';
-    deleteButtonElement.addEventListener('click', () => {
-        deleteContact(contact);
-
-        // Remove the task from the DOM.
-        contactElement.remove();
-    });
-
     contactElement.appendChild(nameElement);
     contactElement.appendChild(emailElement);
     contactElement.appendChild(messageElement);
-    contactElement.appendChild(deleteButtonElement);
 
     return contactElement;
-}
-
-/** Tells the server to delete the contact. */
-function deleteContact(contact) {
-    const params = new URLSearchParams();
-    params.append('id', contact.id);
-    fetch('/delete-contact', {method: 'POST', body: params});
 }
