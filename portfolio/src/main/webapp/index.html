@@ -1,166 +1,192 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Arnav Shah</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          fontFamily: {
-            display: ["Comfortaa"],
-          },
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Arnav Shah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          display: ["Comfortaa"],
         },
-      };
-    </script>
-  </head>
-  <body>
-    <div class="p-8">
-      <h1 class="font-bold font-mono text-6xl text-center text-orange-400">
-        Arnav Shah
-      </h1>
+        extend: {
+          backgroundImage: {
+            'linkedin': "url('./images/linkedin.png')",
+          }
+        }
+      },
+    };
+  </script>
+</head>
+
+<body>
+  <div class="p-8">
+    <h1 class="font-bold font-mono text-6xl text-center text-orange-400">
+      Arnav Shah
+    </h1>
+    <br />
+    <div class="flex flex-row">
+      <div class="text-xl font-display w-3/5 p-8">
+        <p>
+          Hailing from Vadodara, India, I am pursuing a Bachelor's in Computer
+          Science at the University of Illinois at Urbana-Champaign with a
+          minor in Business.
+        </p>
+        <br />
+        <p>
+          With a family history of doctors, I am interested in the
+          intersection of healthcare and engineering. Thus, I am an
+          undergraduate researcher at the Healthcare Engineering Systems
+          Center. In addition, my skills in teaching as a course assistant for
+          Discrete Structures and Numerical Methods allow me to help people
+          learn the theory behind programming. I have also developed a stock
+          inventory management application for Nisarg Orthopedic and Maternity
+          Hospital in India.
+        </p>
+        <br />
+        <p>
+          As an active leader, I have served as the Treasurer for
+          Open-Source@Illinois, a club dedicated to discussing, developing,
+          and utilizing FOSS and open-source software to promote a healthy and
+          free internet.
+        </p>
+        <br />
+        <p>
+          Outside coding, I love music and play Tabla and the drums.
+          Participating enthusiastically in this community, I am the
+          Vice-President (previously Treasurer) at the SpicMacay Illinois
+          chapter.
+        </p>
+        <br />
+      </div>
+      <div class="w-2/5 p-8">
+        <img class="rounded-lg drop-shadow-md" src="./images/arnav.JPG" />
+      </div>
+    </div>
+    <div class="flex flex-col font-mono">
+      <h4 class="text-xl font-semibold text-center">Projects:</h4>
+      <br />
+      <ul class="list-none list-inside">
+        <li class="flex">
+          <div class="w-1/2 p-8">
+            <h1 class="text-lg font-medium">
+              Cherry (Class-Optimizer)
+            </h1>
+            <br>
+            <p>With the vast number of courses on offer at UIUC and the wide variation in average GPA, instructor
+              quality, prereqs, and number of GenEds fulfilled, picking the best course to take is hard.
+            </p>
+            <p>
+              Cherry aims to solve this to make course picking super easy. Just open Cherry, and see a list of all the
+              courses at UIUC sorted by highest to lowest GPA. You can search by departments and even filter courses
+              based on Gen-Eds you'd like to fulfill, with tons of more planned features coming soon!
+
+            </p>
+            <br>
+            <a href="https://cherry.opensourceatillinois.com/home">
+              <button class="rounded-lg drop-shadow-md bg-blue-400 p-2">Live</button>
+            </a>
+            <a href="https://github.com/open-source-at-illinois/cherry">
+              <button class="rounded-lg drop-shadow-md bg-blue-200 p-2">Code</button>
+            </a>
+          </div>
+          <div class="w-1/2 p-8">
+            <img class="rounded-lg drop-shadow-md" src="./images/cherry.png" />
+          </div>
+        </li>
+        <li class="flex">
+          <div class="w-1/2 p-8">
+            <h1 class="text-lg font-medium">
+              Tetris Game
+            </h1>
+            <br>
+            <p>By embracing our universal desire to create order out of chaos, the Tetris® game provides intellectual
+              sport that combines continuous fun with mental stimulation.
+            </p>
+            <br>
+            <p>
+              The Tetris® game requires players to strategically rotate, move, and drop a procession of Tetriminos that
+              fall into the rectangular Matrix at increasing speeds. Players attempt to clear as many lines as possible
+              by completing horizontal rows of blocks without empty space, but if the Tetriminos surpass the Skyline the
+              game is over! It might sound simple, but strategy and speed can go a long way! Are YOU up for the
+              challenge?</p>
+            <br>
+            <a href="https://github.com/arnavss2/tetris">
+              <button class="rounded-lg drop-shadow-md bg-blue-200 p-2">Code</button>
+            </a>
+          </div>
+          <div class="w-1/2 p-8">
+            <img class="rounded-lg drop-shadow-md" src="./images/Tetris.png" />
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="font-mono">
+      <h4 class="text-xl font-semibold text-center">Social Media:</h4>
       <br />
       <div class="flex flex-row">
-        <div class="text-xl font-display w-3/5 p-8">
-          <p>
-            Hailing from Vadodara, India, I am pursuing a Bachelor's in Computer
-            Science at the University of Illinois at Urbana-Champaign with a
-            minor in Business.
-          </p>
-          <br />
-          <p>
-            With a family history of doctors, I am interested in the
-            intersection of healthcare and engineering. Thus, I am an
-            undergraduate researcher at the Healthcare Engineering Systems
-            Center. In addition, my skills in teaching as a course assistant for
-            Discrete Structures and Numerical Methods allow me to help people
-            learn the theory behind programming. I have also developed a stock
-            inventory management application for Nisarg Orthopedic and Maternity
-            Hospital in India.
-          </p>
-          <br />
-          <p>
-            As an active leader, I have served as the Treasurer for
-            Open-Source@Illinois, a club dedicated to discussing, developing,
-            and utilizing FOSS and open-source software to promote a healthy and
-            free internet.
-          </p>
-          <br />
-          <p>
-            Outside coding, I love music and play Tabla and the drums.
-            Participating enthusiastically in this community, I am the
-            Vice-President (previously Treasurer) at the SpicMacay Illinois
-            chapter.
-          </p>
-          <br />
+        <div class="w-1/3 p-8 text-center bg-orange-200 rounded-lg drop-shadow-md">
+          <img class="h-10 w-10 mx-auto object-center" src="./images/linkedin.png">
+          <h1>LinkedIn</h1>
+          <a href="https://www.linkedin.com/in/arnavss" class="text-blue-600 visited:text-purple-600 font-display">
+            arnavss
+          </a>
         </div>
-        <div class="w-2/5 p-8">
-          <img class="rounded-lg drop-shadow-md" src="./images/arnav.JPG" />
+        <div class="w-1/3">
+
+        </div>
+        <div class="w-1/3 p-8 text-center bg-orange-200 rounded-lg drop-shadow-md">
+          <img class="h-10 w-10 mx-auto object-center" src="./images/github.png">
+          <h1>GitHub</h1>
+          <a href="https://github.com/arnavss2" class="text-blue-600 visited:text-purple-600 font-display">
+            arnavss2
+          </a>
         </div>
       </div>
-      <div class="flex flex-row font-mono">
-        <div class="w-1/2 p-8">
-          <h4 class="text-xl font-semibold">Projects:</h4>
-          <br />
-          <ul class="list-disc list-inside">
-            <li>
-              <a
-                href="https://cherry.opensourceatillinois.com/home"
-                class="text-blue-600 visited:text-purple-600 font-display"
-              >
-                Cherry (Class-Optimizer)
-              </a>
-              <br />
-              <img
-                class="rounded-lg drop-shadow-md"
-                src="./images/cherry.png"
-              />
-            </li>
-            <br />
-            <li>
-              <a
-                href="https://github.com/arnavss2/tetris"
-                class="text-blue-600 visited:text-purple-600 font-display"
-              >
-                Tetris Game
-              </a>
-              <br />
-              <img
-                class="rounded-lg drop-shadow-md"
-                src="./images/Tetris.png"
-              />
-            </li>
-          </ul>
-        </div>
-        <div class="w-1/2 p-8">
-          <h4 class="text-xl font-semibold">Social Media:</h4>
-          <br />
-          <ul class="list-disc list-inside">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/arnavss"
-                class="text-blue-600 visited:text-purple-600 font-display"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <br />
-            <li>
-              <a
-                href="https://github.com/arnavss2"
-                class="text-blue-600 visited:text-purple-600 font-display"
-              >
-                GitHub
-              </a>
-            </li>
-          </ul>
-        </div>
+    </div>
+    <br>
+    <div class="text-center font-display">
+      <p>Click here to get a random quote from my favorite TV shows:</p>
+      <br />
+      <div>
+        <button class="rounded-md bg-blue-400 hover:bg-blue-600 p-2" onclick="addRandomQuote()">
+          Quote
+        </button>
       </div>
-      <!-- <p>Click <a href="/hello">here</a> to see content created by server code.</p> -->
-      <div class="text-center font-display">
-        <p>Click here to get a random quote from my favorite TV shows:</p>
+      <div id="quote-container"></div>
+    </div>
+    <br>
+    <div class="bg-teal-400 flex font-display justify-center p-4 rounded-xl">
+      <form action="/form-handler" method="POST">
+        <div>
+          <h1>Enter your details below to contact me!</h1>
+        </div>
         <br />
         <div>
-          <button
-            class="rounded-md bg-blue-400 hover:bg-blue-600 p-2"
-            onclick="addRandomQuote()"
-          >
-            Quote
-          </button>
+          <input type="text" name="name" placeholder="Name" class="rounded-md"></input>
         </div>
-        <div id="quote-container"></div>
-      </div>
-      <div class="bg-teal-400 flex font-display justify-center">
-        <form action="/form-handler" method="POST">
-            <div>
-                <h1>Enter your details below to contact me!</h1>
-            </div>
-            <br />
-            <div>
-                <input type="text" name="name" placeholder="Name"></input>
-            </div>
-            <br />
-            <div>
-                <input type="text" name="email" placeholder="Email"></input>
-            </div>
-            <br/>
-            <div>
-                <textarea name="message" placeholder="Message"></textarea>
-            </div>
-            <br/>
-            <div>
-                <input class="rounded-md bg-blue-400 hover:bg-blue-600 p-2" type="submit" />
-            </div>
-        </form>
+        <br />
+        <div>
+          <input type="text" name="email" placeholder="Email" class="rounded-md"></input>
         </div>
+        <br />
+        <div>
+          <textarea name="message" placeholder="Message" class="rounded-md"></textarea>
+        </div>
+        <br />
+        <div>
+          <input class="rounded-md bg-blue-400 hover:bg-blue-600 p-2" type="submit" />
+        </div>
+      </form>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

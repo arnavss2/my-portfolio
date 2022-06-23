@@ -26,3 +26,34 @@ function addRandomQuote() {
   const quoteContainer = document.getElementById('quote-container');
   quoteContainer.innerText = quote;
 }
+
+/** Fetches contacts from the server and adds them to the DOM. */
+function loadContacts() {
+    fetch('/list-contacts').then(response => response.json()).then((contacts) => {
+      const contactListElement = document.getElementById('contact-list');
+      contacts.forEach((contact) => {
+        contactListElement.appendChild(createContactElement(contact));
+      })
+    });
+}
+  
+  /** Creates an element that represents a contact, including its delete button. */
+  function createContactElement(contact) {
+    const contactElement = document.createElement('li');
+    contactElement.className = 'contact';
+  
+    const nameElement = document.createElement('span');
+    nameElement.innerText = contact.name;
+  
+    const emailElement = document.createElement('span');
+    emailElement.innerText = contact.email;
+
+    const messageElement = document.createElement('span');
+    messageElement.innerText = contact.message;
+
+    contactElement.appendChild(nameElement);
+    contactElement.appendChild(emailElement);
+    contactElement.appendChild(messageElement);
+
+    return contactElement;
+}
